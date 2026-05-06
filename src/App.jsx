@@ -1,14 +1,12 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
 import Example from './components/example'
-
+import Navbar from './features/indexPage/navbar'
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import { Outlet } from 'react-router-dom'
 function App() {
   return <div>
-    <Example/>
-    <h1>Hello Harshitha</h1>
+    <Navbar/>
+    
+    <Outlet/>
   </div>
 }
 
