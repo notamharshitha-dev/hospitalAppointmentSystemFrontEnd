@@ -7,7 +7,7 @@ function LoginPage(){
             password:""
         },
         onSubmit:(values)=>{
-            console.log(values)
+            //console.log(values)
         }
     })
     /* <div class="row g-4 align-items-center">
@@ -37,11 +37,11 @@ function LoginPage(){
             <div class="myContainer">            
                     <form onSubmit={loginForm.handleSubmit} >
                         <label htmlFor="username">Username</label>
-                        <input type="text"id="username" class="inputBoxBorder" />
+                        <input type="text"id="username" class="inputBoxBorder" {...loginForm.getFieldProps("username")} />
                         <label htmlFor="password">Password</label>
-                        <input type="password" id="password" class="inputBoxBorder" />
+                        <input type="password" id="password" class="inputBoxBorder" {...loginForm.getFieldProps("password")} />
                        
-                        <button class="btn btn-primary" type="submit">Login </button>
+                        <button className="btn btn-primary" type="submit">Login </button>
                         
                     
                     </form>
