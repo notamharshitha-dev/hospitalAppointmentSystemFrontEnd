@@ -26,3 +26,12 @@
 .inputBoxBorder{
     border-radius: 20px;
 }
+.about{
+    display:flex;
+}
+.about>div>p{
+    padding: 20px;
+}
+.about>img{
+    width: 300px;
+}
