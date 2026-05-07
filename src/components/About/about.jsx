@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import hospital from "../../assets/hospital.jpg"
 function AboutPage(){
     return <div>
@@ -18,7 +19,7 @@ function AboutPage(){
                 </div>
             </div>
         <div class="d-grid gap-2 col-6 mx-auto">
-            <button class="btn btn-primary">Book A Appointment Now </button>
+            <Link class="btn btn-primary" to="/loginPage" >Book A Appointment Now </Link>
         </div>    
     </div>
 }

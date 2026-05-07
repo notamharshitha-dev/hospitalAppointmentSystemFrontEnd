@@ -35,3 +35,14 @@
 .about>img{
     width: 300px;
 }
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;   
+}
+.gallery img{
+    height: 350px;
+    width: 350px;
+    margin: 20px;
+    border-radius: 20px;
+}
