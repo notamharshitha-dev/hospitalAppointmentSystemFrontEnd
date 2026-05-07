@@ -8,6 +8,8 @@ import HomePage from './components/home/home.jsx'
 import AboutPage from './components/About/about.jsx'
 import GalleryPage from './components/Gallery/gallery.jsx'
 import ContactPage from './components/Contact/contact.jsx'
+import LoginPage from './components/login/login.jsx';
+import SignUpPage from './components/signup/signUp.jsx';
 const router=createBrowserRouter([  
   {
     path:"/",
@@ -32,6 +34,14 @@ const router=createBrowserRouter([
       {
         path:"/galleryPage",
         element:<GalleryPage/>
+      },
+      {
+        path:"/loginPage",
+        element:<LoginPage/>
+      },
+      {
+        path:"/signUpPage",
+        element:<SignUpPage/>
       }
     ]
   }
