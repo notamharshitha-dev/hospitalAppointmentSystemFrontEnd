@@ -13,13 +13,13 @@ function SignUpPage(){
     })
     return   <div>
         <h1 className="text-center" >signUp</h1>
-        <div class="outerDiv" >                
-            <div class="myContainer">            
+        <div className="outerDiv" >                
+            <div className="myContainer">            
                     <form onSubmit={signUpForm.handleSubmit} >
                         <label htmlFor="username">Username</label>
-                        <input type="text"id="username" class="inputBoxBorder" {...signUpForm.getFieldProps("username")}  />
+                        <input type="text"id="username" className="inputBoxBorder" {...signUpForm.getFieldProps("username")}  />
                         <label htmlFor="password">Password</label>
-                        <input type="password" id="password" class="inputBoxBorder" {...signUpForm.getFieldProps("password")} />
+                        <input type="password" id="password" className="inputBoxBorder" {...signUpForm.getFieldProps("password")} />
                         <button className="btn btn-primary" type="submit">SignUp </button>  <br />
                         <b>Already a User?</b><Link to="/loginPage" >Login</Link>          
                     </form>                    
