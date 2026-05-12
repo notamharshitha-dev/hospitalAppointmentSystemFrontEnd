@@ -3,7 +3,7 @@ import img2 from "../../assets/homeImg2.jpg"
 import img3 from "../../assets/homeImg3.jpg"
 import AboutPage from "../About/about"
 import hcImg1 from "../../assets/homeChooseImg1.jpg"
-import hcImg2 from "../../assets/homeChooseImg2.jpg"
+import hcImg2 from "../../assets/homeChoosenImg2.jpg"
 import hcImg3 from "../../assets/homeChooseImg3.jpg"
 function HomePage(){
     return <div>
@@ -49,21 +49,21 @@ function HomePage(){
         <AboutPage/>
         <h1 className="text-center p-3 " >Why To Choose Us?</h1>
         <div class="card-group">
-            <div class="card p-3 m-3 ">
+            <div class="card  m-3 ">
                 <img src={hcImg1} class="card-img-top h-25 " alt="Something Went Wrong"/>
                 <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptate odio praesentium placeat dicta voluptas perspiciatis magni neque, suscipit nam possimus blanditiis ullam amet omnis rem sunt quas culpa harum!</p>               
                 </div>
             </div>
-            <div class="card p-3 m-3 ">
+            <div class="card  m-3 ">
                 <img src={hcImg2} class="card-img-top h-25 " alt="Something Went Wrong"/>
                 <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium vitae sed deleniti quos, reprehenderit, recusandae quas, beatae ad labore nulla illum? Quam ad deserunt quas nemo quibusdam reprehenderit illo eveniet.</p>
                 </div>
             </div>
-            <div class="card m-3 p-3  ">
+            <div class="card m-3   ">
                 <img src={hcImg3} class="card-img-top h-25 " alt="Something Went Wrong"/>
                 <div class="card-body">
                 <h5 class="card-title">Card title</h5>
