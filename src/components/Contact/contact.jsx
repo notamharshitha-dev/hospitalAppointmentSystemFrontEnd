@@ -8,7 +8,7 @@ function ContactPage(){
             msg:""
         },
         onSubmit:(values)=>{        
-            console.log(values)
+           // console.log(values)
         }
     })
    function displayToastMsg() {
