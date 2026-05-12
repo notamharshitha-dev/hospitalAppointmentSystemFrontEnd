@@ -1,9 +1,13 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+   background-color: aqua;
+}
 .myBox{
     color: aqua;
 }
 .myContainer{
     border: 2px solid black;
-    height: 300px;
+    height: 335px;
     width: 400px;
     border-radius: 20px;
     text-align: center;
@@ -12,10 +16,12 @@
     box-shadow:10px 10px 5px grey ;
     
 }
+
 .outerDiv{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
 }
 .myContainer>form>input{
     margin: 15px;

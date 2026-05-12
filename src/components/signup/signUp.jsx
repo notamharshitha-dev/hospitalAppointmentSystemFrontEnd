@@ -1,4 +1,5 @@
 import { useFormik } from "formik"
+import { Link } from "react-router-dom"
 
 function SignUpPage(){
     var signUpForm=useFormik({
@@ -19,7 +20,8 @@ function SignUpPage(){
                         <input type="text"id="username" class="inputBoxBorder" {...signUpForm.getFieldProps("username")}  />
                         <label htmlFor="password">Password</label>
                         <input type="password" id="password" class="inputBoxBorder" {...signUpForm.getFieldProps("password")} />
-                        <button className="btn btn-primary" type="submit">SignUp </button>                     
+                        <button className="btn btn-primary" type="submit">SignUp </button>  <br />
+                        <b>Already a User?</b><Link to="/loginPage" >Login</Link>          
                     </form>                    
             </div>
         </div>

@@ -32,8 +32,7 @@ function Navbar(){
                     </div>
                 </nav>
                 <div className="d-grid gap-2 d-md-flex justify-content-md-end">
-                <Link className="btn btn-primary me-md-2" to="/signUpPage" >signUp</Link>
-                <Link className="btn btn-primary" to="/loginPage" >Login</Link>
+                <Link className="btn btn-primary" to="/loginPage" >Get Started</Link>
                 </div>
         </div>
         
