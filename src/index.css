@@ -52,3 +52,21 @@ body{
     margin: 20px;
     border-radius: 20px;
 }
+.homeDiv{
+    padding: 20px;
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.homeInnerDiv{
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+    height: 330px;
+    width: 350px;
+}
+.homeChooseHeight{
+    height: 40px;
+    object-fit: cover;
+}
