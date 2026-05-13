@@ -1,5 +1,6 @@
 import { useFormik } from "formik"
 import { Toast } from "bootstrap"
+import Navbar from "../../features/indexPage/navbar";
 function ContactPage(){
     var contactForm=useFormik({
         initialValues:{
@@ -12,11 +13,12 @@ function ContactPage(){
         }
     })
    function displayToastMsg() {
-  const toastEl = document.getElementById("liveToast");
-  const toast = new Toast(toastEl);
-  toast.show();
-};
+        const toastEl = document.getElementById("liveToast");
+        const toast = new Toast(toastEl);
+        toast.show();
+        }
     return <div>
+        <Navbar/>
     <h1 className="text-align-center" >contact Us</h1>
       <form  onSubmit={contactForm.handleSubmit} >
             <div className="form-floating mb-3">

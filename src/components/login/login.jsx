@@ -1,5 +1,6 @@
 import { useFormik } from "formik"
 import { Link } from "react-router-dom"
+import Navbar from "../../features/indexPage/navbar"
 
 function LoginPage(){
     var loginForm=useFormik({
@@ -33,6 +34,7 @@ function LoginPage(){
                             </div>
                         </div>*/
     return <div>
+        <Navbar/>
         <h1 className="text-center" >Login</h1>
         <div class="outerDiv" >                
             <div class="myContainer">            

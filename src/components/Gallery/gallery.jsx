@@ -3,8 +3,10 @@ import img2 from "../../assets/ToGal2.jpg"
 import img3 from "../../assets/ToGal3.jpg"
 import img4 from "../../assets/ToGal4.jpg"
 import img5 from "../../assets/ToGal5.jpg"
+import Navbar from "../../features/indexPage/navbar"
 function GalleryPage(){
     return <div>
+        <Navbar/>
         <h1 className="text-center" >Gallery</h1>
         <div class="gallery" >        
                 <img src={img1} alt="" />

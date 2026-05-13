@@ -5,8 +5,10 @@ import AboutPage from "../About/about"
 import hcImg1 from "../../assets/homeChooseImg1.jpg"
 import hcImg2 from "../../assets/homeChoosenImg2.jpg"
 import hcImg3 from "../../assets/homeChooseImg3.jpg"
+import Navbar from "../../features/indexPage/navbar"
 function HomePage(){
     return <div>
+        <Navbar/>
         <div id="carouselExampleDark" className="carousel carousel-dark slide">
                 <div className="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -17,22 +19,22 @@ function HomePage(){
                         <div className="carousel-item active" data-bs-interval="10000">
                             <img src={img1} className="d-block w-100  " alt="Something Went Wrong"/>
                             <div className="carousel-caption d-none d-md-block">
-                                <h5 className="fw-bold text-light" >First slide label</h5>
-                                <p className="text-light" >Some representative placeholder content for the first slide.</p>
+                                <h5 className="fw-bold text-light" >Your Health, Our Priority</h5>
+                                <p className="text-light" >Book appointments with trusted doctors anytime, anywhere with ease.</p>
                             </div>
                         </div>
                         <div className="carousel-item">
                             <img src={img2} className="d-block w-100" alt="Something Went Wrong"/>
                             <div className="carousel-caption d-none d-md-block">
-                                <h5 className="fw-bold text-light" >second slide label</h5>
-                                <p className="text-light" >Some representative placeholder content for the third slide.</p>
+                                <h5 className="fw-bold text-light" >Digital Healthcare Experience</h5>
+                                <p className="text-light" >Book appointments with trusted doctors anytime, anywhere with ease.</p>
                             </div>
                         </div>
                          <div className="carousel-item">
                             <img src={img3} className="d-block w-100" alt="Something Went Wrong"/>
                             <div className="carousel-caption d-none d-md-block">
-                                <h5 className="fw-bold text-light" >Third slide label</h5>
-                                <p className="text-light" >Some representative placeholder content for the third slide.</p>
+                                <h5 className="fw-bold text-light" >Connect with Top Specialists</h5>
+                                <p className="text-light" >Browse through our list of experienced doctors and find the right specialist for your health needs.</p>
                             </div>
                         </div>
                          
@@ -50,24 +52,24 @@ function HomePage(){
         <h1 className="text-center p-3 " >Why To Choose Us?</h1>
         <div class="card-group">
             <div class="card  m-3 ">
-                <img src={hcImg1} class="card-img-top h-25 " alt="Something Went Wrong"/>
+                <img src={hcImg1} class="card-img-top  " alt="Something Went Wrong"/>
                 <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptate odio praesentium placeat dicta voluptas perspiciatis magni neque, suscipit nam possimus blanditiis ullam amet omnis rem sunt quas culpa harum!</p>               
+                <h5 class="card-title">Personalized Excellence</h5>
+                <p class="card-text">We believe in a patient-first approach. Our dedicated team takes the time to understand your unique health needs and preferences, creating tailored treatment plans for every individual.</p>               
                 </div>
             </div>
-            <div class="card  m-3 ">
-                <img src={hcImg2} class="card-img-top h-25 " alt="Something Went Wrong"/>
+            <div class="card  m-3  ">
+                <img src={hcImg2} class="card-img-top h-50 " alt="Something Went Wrong"/>
                 <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium vitae sed deleniti quos, reprehenderit, recusandae quas, beatae ad labore nulla illum? Quam ad deserunt quas nemo quibusdam reprehenderit illo eveniet.</p>
+                <h5 class="card-title"> Trusted Care</h5>
+                <p class="card-text">Your health is in safe hands. With years of experience and a commitment to clinical integrity, our medical professionals provide reliable, evidence-based care you can count on.</p>
                 </div>
             </div>
             <div class="card m-3   ">
-                <img src={hcImg3} class="card-img-top h-25 " alt="Something Went Wrong"/>
+                <img src={hcImg3} class="card-img-top  h-50" alt="Something Went Wrong"/>
                 <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel eligendi, aperiam ipsa dolorum, excepturi ducimus sequi consectetur necessitatibus explicabo quaerat numquam rem quisquam veritatis quo corporis molestias facere sint maxime.</p>
+                <h5 class="card-title">Empowering Wellness Journey</h5>
+                <p class="card-text">We go beyond just treating illness. We focus on preventive care and patient education to empower you with the knowledge and tools needed to lead a healthier, more vibrant life.</p>
                 </div>
             </div>
         </div>

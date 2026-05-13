@@ -10,12 +10,13 @@ import GalleryPage from './components/Gallery/gallery.jsx'
 import ContactPage from './components/Contact/contact.jsx'
 import LoginPage from './components/login/login.jsx';
 import SignUpPage from './components/signup/signUp.jsx';
+import Navbar from './features/indexPage/navbar.jsx';
 const router=createBrowserRouter([  
   {
     path:"/",
-    element:<App/>,
-    children:[
-      {
+    element:<HomePage/>
+  },
+     {
         path:"/doctorsPage",
         element:<DoctorsPage/>
       },
@@ -43,8 +44,7 @@ const router=createBrowserRouter([
         path:"/signUpPage",
         element:<SignUpPage/>
       }
-    ]
-  }
+    
 ])
 createRoot(document.getElementById('root')).render(
   <RouterProvider router={router} ></RouterProvider>
