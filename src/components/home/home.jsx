@@ -1,11 +1,12 @@
 import img1 from "../../assets/homeImg1.jpg"
 import img2 from "../../assets/homeImg2.jpg"
 import img3 from "../../assets/homeImg3.jpg"
-import AboutPage from "../About/about"
+import hospital from "../../assets/hospital.jpg"
 import hcImg1 from "../../assets/homeChooseImg1.jpg"
 import hcImg2 from "../../assets/homeChoosenImg2.jpg"
 import hcImg3 from "../../assets/homeChooseImg3.jpg"
 import Navbar from "../../features/indexPage/navbar"
+import { Link } from "react-router-dom"
 function HomePage(){
     return <div>
         <Navbar/>
