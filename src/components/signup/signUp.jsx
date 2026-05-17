@@ -1,9 +1,10 @@
 import { useFormik } from "formik"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import Navbar from "../../features/indexPage/navbar"
 import { useGetUserSignUpByNameMutation } from "../../services/signUpApi"
 
 function SignUpPage(){
+    var navigate=useNavigate();
     var [getNewUserFn]=useGetUserSignUpByNameMutation();
     var signUpForm=useFormik({
         initialValues:{
@@ -14,7 +15,8 @@ function SignUpPage(){
         onSubmit:(values)=>{
            console.log(values)
            getNewUserFn(values).then((res)=>{
-            console.log(res)
+            console.log(res);
+            navigate("/loginPage")
            })
         }
     })
