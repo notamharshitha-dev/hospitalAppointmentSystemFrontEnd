@@ -1,10 +1,11 @@
 import {useState} from "react"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 function Navbar(){
     const [isOpen, setIsOpen] = useState(false);
+    var navigate=useNavigate()
     function logOutFn(){
         window.localStorage.clear();
-        window.location.href="/homePage"
+        navigate("/homePage");
     }
     return (
           <nav className="navbar sticky-top bg-body-tertiary" >
