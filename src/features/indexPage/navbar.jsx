@@ -2,6 +2,10 @@ import {useState} from "react"
 import { Link } from "react-router-dom"
 function Navbar(){
     const [isOpen, setIsOpen] = useState(false);
+    function logOutFn(){
+        window.localStorage.clear();
+        window.location.href="/homePage"
+    }
     return (
           <nav className="navbar sticky-top bg-body-tertiary" >
             <div className="container-fluid">    
@@ -28,12 +32,19 @@ function Navbar(){
                             <li className="nav-item">
                             <Link className="nav-link" to="/contactPage" >Contact</Link>
                             </li>
+                            {
+                                window.localStorage.getItem("username") && 
+                                    <li className="nav-item">
+                            <Link className="nav-link" to="/contactPage" >Appointments</Link>
+                            </li>
+                            }
+                            
                         </ul>
                         </div>
                     </div>
                 </nav>
                 <div className="d-grid gap-2 d-md-flex justify-content-md-end">
-                <Link className="btn btn-primary" to="/loginPage" >Get Started</Link>
+               { !window.localStorage.getItem("username") ? <Link className="btn btn-primary" to="/loginPage" >Get Started</Link> :  <button className="btn btn-primary" onClick={()=>{ logOutFn() }} >logout</button> }
                 </div>
         </div>
         

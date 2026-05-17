@@ -1,15 +1,21 @@
 import { useFormik } from "formik"
 import { Link } from "react-router-dom"
 import Navbar from "../../features/indexPage/navbar"
+import { useGetUserSignUpByNameMutation } from "../../services/signUpApi"
 
 function SignUpPage(){
+    var [getNewUserFn]=useGetUserSignUpByNameMutation();
     var signUpForm=useFormik({
         initialValues:{
             "username":"",
-            "password":""
+            "password":"",
+            "role":"doctor"
         },
         onSubmit:(values)=>{
-           //console.log(values)
+           console.log(values)
+           getNewUserFn(values).then((res)=>{
+            console.log(res)
+           })
         }
     })
 return<div>

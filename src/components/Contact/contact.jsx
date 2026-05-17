@@ -1,15 +1,20 @@
 import { useFormik } from "formik"
 import { Toast } from "bootstrap"
 import Navbar from "../../features/indexPage/navbar";
+import { useGetContactByNameMutation } from "../../services/contactApi";
 function ContactPage(){
+    var [getContactFn]=useGetContactByNameMutation();
     var contactForm=useFormik({
         initialValues:{
             name:"",
             email:"",
-            msg:""
+            message:""
         },
         onSubmit:(values)=>{        
-           // console.log(values)
+           console.log(values);
+           getContactFn(values).then((res)=>{
+            console.log(res)
+           })
         }
     })
    function displayToastMsg() {

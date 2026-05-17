@@ -11,6 +11,8 @@ import ContactPage from './components/Contact/contact.jsx'
 import LoginPage from './components/login/login.jsx';
 import SignUpPage from './components/signup/signUp.jsx';
 import Navbar from './features/indexPage/navbar.jsx';
+import { Provider } from 'react-redux';
+import { store } from './app/store.js';
 const router=createBrowserRouter([  
   {
     path:"/",
@@ -47,7 +49,9 @@ const router=createBrowserRouter([
     
 ])
 createRoot(document.getElementById('root')).render(
-  <RouterProvider router={router} ></RouterProvider>
+  <Provider store={store}>
+    <RouterProvider router={router} ></RouterProvider>
+  </Provider>
    
   
 )
