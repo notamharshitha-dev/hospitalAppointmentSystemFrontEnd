@@ -7,12 +7,12 @@ body{
 }
 .myContainer{
     border: 2px solid black;
-    height: 360px;
+    height: 380px;
     width: 400px;
     border-radius: 20px;
     text-align: center;
     margin: 20px;
-    padding: 40px;
+    padding: 30px;
     box-shadow:10px 10px 5px grey ;
     
 }
@@ -69,4 +69,32 @@ body{
 .homeChooseHeight{
     height: 40px;
     object-fit: cover;
+}
+.outerDoctorDiv{
+    display: flex;
+    flex-wrap: wrap;
+}
+.innerDoctorDiv{
+    height: 200px;
+    background-color: rgb(204, 239, 239);
+    width: 200px;
+    list-style: none;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: inset 2px 2px 5px grey;
+}
+.displayDoctorDiv{
+    background-color: rgb(175, 243, 220);
+    height: 350px;
+    width: 350px;
+    text-align: center;
+    padding: 50px;
+    border-radius: 20px;
+    margin: 20px;
+}
+.center{
+    display: flex;
+    justify-content: center;
 }

@@ -34,9 +34,15 @@ function Navbar(){
                             <Link className="nav-link" to="/contactPage" >Contact</Link>
                             </li>
                             {
-                                window.localStorage.getItem("username") && 
+                                window.localStorage.getItem("role")==="doctor" && 
                                     <li className="nav-item">
                             <Link className="nav-link" to="/contactPage" >Appointments</Link>
+                            </li>
+                            }
+                            {
+                                window.localStorage.getItem("role")==="user" && 
+                                    <li className="nav-item">
+                            <Link className="nav-link" to="/userAccountPage" >My Account</Link>
                             </li>
                             }
                             

@@ -13,6 +13,8 @@ import SignUpPage from './components/signup/signUp.jsx';
 import Navbar from './features/indexPage/navbar.jsx';
 import { Provider } from 'react-redux';
 import { store } from './app/store.js';
+import BookAppointment from './components/Doctors/bookAppointment.jsx';
+import UserAccount from './components/userAccount/userAccount.jsx';
 const router=createBrowserRouter([  
   {
     path:"/",
@@ -45,6 +47,14 @@ const router=createBrowserRouter([
       {
         path:"/signUpPage",
         element:<SignUpPage/>
+      },
+      {
+        path:"/bookAppointmentPage",
+        element:<BookAppointment/>
+      },
+      {
+        path:"/userAccountPage",
+        element:<UserAccount/>
       }
     
 ])
