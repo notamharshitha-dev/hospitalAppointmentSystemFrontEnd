@@ -1,7 +1,7 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 export const signUpAPi = createApi({
   reducerPath: 'signUpAPi',
-  baseQuery: fetchBaseQuery({ baseUrl: 'https://hpa-backend-8nxf.onrender.com/signUp' }),
+  baseQuery: fetchBaseQuery({ baseUrl: 'https://hospital-appointment-system-jxhx.onrender.com/patient' }),
   endpoints: (builder) => ({
     getUserSignUpByName: builder.mutation({
       query: (newUser) => ({

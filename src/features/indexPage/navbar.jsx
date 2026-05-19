@@ -4,7 +4,8 @@ function Navbar(){
     const [isOpen, setIsOpen] = useState(false);
     var navigate=useNavigate()
     function logOutFn(){
-        window.localStorage.clear();
+        window.localStorage.removeItem("token");
+        window.localStorage.removeItem("username");
         navigate("/homePage");
     }
     return (
