@@ -12,7 +12,7 @@ function UserAccount(){
     }
     return <div>
         <Navbar/>
-        <h1 className="text-center text-success " >My Account</h1>
+       <u className="text-success" > <h1 className="text-center text-success " >My Account</h1></u>
         <div className='center ' >            
             <div className="displayUserAccountDiv d-flex " >                
                     <div>
@@ -23,13 +23,12 @@ function UserAccount(){
                         <h4>ADDRESS</h4>
                     </div>
                <div>
-                    
-                     <h4 >:{data?.username}</h4>
+                    <h4 >:{data?.username}</h4>
                     <h4>:{data?.dob}</h4>
                     <h4>:{data?.email}</h4>
                     <h4>:{data?.phone}</h4>
                     <h4>:{data?.address}</h4>
-                    <button className="btn btn-primary m-5 " onClick={()=>{ logout() }}  >Logout  <i class="bi bi-box-arrow-right"></i></button>
+                    <button className="btn btn-primary m-5 bg-success " onClick={()=>{ logout() }}  >Logout  <i class="bi bi-box-arrow-right"></i></button>
                </div>
             </div>
         </div>
