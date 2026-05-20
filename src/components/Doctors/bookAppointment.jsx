@@ -1,15 +1,17 @@
 import { useFormik } from "formik";
+import { Toast } from "bootstrap"
 import React, { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import Navbar from "../../features/indexPage/navbar";
 import { useSendpatientAppointmentDetailsMutation } from "../../services/patientApi";
 function BookAppointment(){
+    var navigate=useNavigate()
     var {state}=useLocation();
     //console.log("In book appointment Page :::",state)
     var [postPatientAppointmentDetailsFn]=useSendpatientAppointmentDetailsMutation()
     var patientAppointmentDetails=useFormik({
         initialValues:{
-            patientId:window.localStorage.getItem("userId"),
+            patientId:window.localStorage.getItem("userid"),
             doctorName:state.name,
             doctorMail:state.email,
             consultationFee:state.fees,
@@ -25,6 +27,13 @@ function BookAppointment(){
             })
         }
     })
+      function displayToastMsg() {
+        console.log("hello")
+            const toastEl = document.getElementById("liveToast");
+            const toast = new Toast(toastEl);
+            toast.show();
+            navigate("/doctorsPage")
+            }
    return <div>
         <Navbar/>
         <div class="center">
@@ -44,8 +53,19 @@ function BookAppointment(){
                     </select>   
                     <label htmlFor="floatingSelectDisabled">Select Time</label>                 
                 </div> 
-                <button className="btn btn-primary m-3  bg-success " >Book Appointment</button>
+                <div className="d-grid gap-2 col-6 mx-auto">                         
+                <button type="submit" className="btn btn-primary" id="liveToastBtn" onClick={()=>{ displayToastMsg() }} >Send Message</button>
+                    <div className="toast-container position-fixed top-0 end-0 p-3">
+                    <div id="liveToast" className="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                        <button type="button" className="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>                        
+                        <div className="toast-body">
+                        Appointment booked Successfully
+                        </div>
+                    </div>
+                    </div>
+            </div>
                 </form>
+                
              </div>
         </div>
     </div>

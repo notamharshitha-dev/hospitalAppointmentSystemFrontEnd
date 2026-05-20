@@ -4,8 +4,7 @@ function Navbar(){
     const [isOpen, setIsOpen] = useState(false);
     var navigate=useNavigate()
     function logOutFn(){
-        window.localStorage.removeItem("token");
-        window.localStorage.removeItem("username");
+        window.localStorage.clear()
         navigate("/homePage");
     }
     return (
@@ -35,13 +34,7 @@ function Navbar(){
                             <Link className="nav-link" to="/contactPage" >Contact</Link>
                             </li>
                             {
-                                window.localStorage.getItem("role")==="doctor" && 
-                                    <li className="nav-item">
-                            <Link className="nav-link" to="/contactPage" >Appointments</Link>
-                            </li>
-                            }
-                            {
-                                window.localStorage.getItem("role")==="user" && 
+                                window.localStorage.getItem("username") && 
                                     <li className="nav-item">
                             <Link className="nav-link" to="/userAccountPage" >My Account</Link>
                             </li>

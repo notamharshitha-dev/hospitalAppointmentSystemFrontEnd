@@ -18,8 +18,9 @@ function LoginPage(){
             getLoginFn(values).then((res)=>{
                 console.log(res);
                 if(res.data.msg === "login success" ){
-                    window.localStorage.setItem("username",res.data.username);
+                    window.localStorage.setItem("username",res.data.a_u.username);
                     window.localStorage.setItem("token",res.data.token);
+                    window.localStorage.setItem("userid",res.data.a_u._id)
                     setLoginFailed(null)
                 }else{
                     setLoginFailed(res.data.msg)

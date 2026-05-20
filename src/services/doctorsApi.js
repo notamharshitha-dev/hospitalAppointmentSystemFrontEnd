@@ -1,7 +1,7 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 export const doctorsApi = createApi({
   reducerPath: 'doctorsApi',
-  baseQuery: fetchBaseQuery({ baseUrl: 'https://hospital-appointment-system-jxhx.onrender.com' }),
+  baseQuery: fetchBaseQuery({ baseUrl: 'https://twbackend-v5op.onrender.com' }),
   endpoints: (builder) => ({
      getAllDoctorsByName: builder.query({
       query: () => "/doctors",

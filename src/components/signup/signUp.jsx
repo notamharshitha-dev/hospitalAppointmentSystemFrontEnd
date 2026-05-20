@@ -7,7 +7,6 @@ import { useState } from "react";
 function SignUpPage(){
     var navigate=useNavigate();
     var [getNewUserFn]=useGetUserSignUpByNameMutation();
-    var [role,setRole]=useState("");
     var signUpForm=useFormik({
         initialValues:{
             "username":"",
@@ -21,8 +20,9 @@ function SignUpPage(){
         onSubmit:(values)=>{
            console.log(values)
            getNewUserFn(values).then((res)=>{
+            console.log(res)
             console.log(res.data.newPatient._id);
-            window.localStorage.setItem("userId",res.data.newPatient._id)
+           
             navigate("/loginPage");
            })
         }

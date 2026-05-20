@@ -28,7 +28,7 @@ function AboutPage(){
                 </div>
             </div>
         <div class="d-grid gap-2 col-6 mx-auto">
-            <Link class="btn btn-primary" to="/loginPage" >Book A Appointment Now </Link>
+            <Link class="btn btn-primary" to="/doctorsPage" >Book A Appointment Now </Link>
         </div>    
     </div>
 }
