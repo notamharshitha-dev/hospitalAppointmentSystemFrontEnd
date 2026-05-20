@@ -73,7 +73,8 @@ function HomePage(){
                             </div>
                         </div>
                     <div class="d-grid gap-2 col-6 mx-auto">
-                        <Link class="btn btn-primary" to="/doctorsPage" >Book A Appointment Now </Link>
+                         { window.localStorage.getItem("username")  &&  <Link class="btn btn-primary" to="/doctorsPage" >Book A Appointment Now </Link> }
+                         { !window.localStorage.getItem("username")  &&  <Link class="btn btn-primary" to="/loginPage" >Book A Appointment Now </Link> }    
                     </div>  
                         <h1 className="text-center p-3 " >Why To Choose Us?</h1>
                         <div class="card-group">
