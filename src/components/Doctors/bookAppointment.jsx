@@ -52,9 +52,9 @@ function BookAppointment(){
                         <option value="19:30-20:30">19:30-20:30</option>                     
                     </select>   
                     <label htmlFor="floatingSelectDisabled">Select Time</label>                 
-                </div> 
+                </div> <br />
                 <div className="d-grid gap-2 col-6 mx-auto">                         
-                <button type="submit" className="btn btn-primary" id="liveToastBtn" onClick={()=>{ displayToastMsg() }} >Send Message</button>
+                <button type="submit" className="btn btn-primary  p-3 w-100 bg-success " id="liveToastBtn" onClick={()=>{ displayToastMsg() }} >book Appointment</button>
                     <div className="toast-container position-fixed top-0 end-0 p-3">
                     <div id="liveToast" className="toast" role="alert" aria-live="assertive" aria-atomic="true">
                         <button type="button" className="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>                        

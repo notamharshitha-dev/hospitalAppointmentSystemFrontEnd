@@ -44,7 +44,7 @@ return<div>
                     <label htmlFor="floatingInputDisabled">Password</label>
                 </div> 
                 <div className="form-floating mb-3">
-                    <input type="text" className="form-control" id="floatingInputDisabled" placeholder="Degree" {...signUpForm.getFieldProps("dob")} />
+                    <input type="date" className="form-control" id="floatingInputDisabled" placeholder="Degree" {...signUpForm.getFieldProps("dob")} />
                     <label htmlFor="floatingInputDisabled">DOB</label>
                 </div>     
                 <div className="form-floating mb-3">
