@@ -44,7 +44,7 @@ function ContactPage(){
                     <div id="liveToast" className="toast" role="alert" aria-live="assertive" aria-atomic="true">
                         <button type="button" className="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>                        
                         <div className="toast-body">
-                        Deatils were Sent Successfully
+                        Details were Sent Successfully
                         </div>
                     </div>
                     </div>

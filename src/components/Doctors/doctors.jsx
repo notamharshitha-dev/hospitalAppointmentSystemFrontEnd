@@ -17,13 +17,16 @@ function DoctorsPage(){
         {isLoading && <h1 className="text-center text-success " >Loading...</h1> }
         <ul class="outerDoctorDiv" >
             {
-                data?.map((doctorDetails)=>{
-                    return <li onClick={()=>{ displayDoctorDetails(doctorDetails)  }} class="innerDoctorDiv"  >
-                        <h4 className="text-success" >{doctorDetails.name}</h4>
-                        <h5>{doctorDetails.degree}</h5>
-                        <h5>{doctorDetails.speciality}</h5>                        
-                    </li>
-                })
+                data?.filter((a)=>{ 
+                        if(a.status==="available"){
+                            return true
+                        }}).map((doctorDetails)=>{
+                                    return <li onClick={()=>{ displayDoctorDetails(doctorDetails)  }} class="innerDoctorDiv"  >
+                                        <h4 className="text-success" >{doctorDetails.name}</h4>
+                                        <h5>{doctorDetails.degree}</h5>
+                                        <h5>{doctorDetails.speciality}</h5>                        
+                                    </li>
+                                })
             }
         </ul>
     </div>

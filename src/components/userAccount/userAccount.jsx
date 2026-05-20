@@ -13,14 +13,24 @@ function UserAccount(){
     return <div>
         <Navbar/>
         <h1 className="text-center text-success " >My Account</h1>
-        <div class='center' >
-            <div class="displayUserAccountDiv" >
-                <h1>{data?.username}</h1>
-                <h3>{data?.dob}</h3>
-                <h3>{data?.email}</h3>
-                <h3>{data?.phone}</h3>
-                <h3>{data?.address}</h3>
-                <button className="btn btn-primary m-5 " onClick={()=>{ logout() }}  >Logout</button>
+        <div className='center ' >            
+            <div className="displayUserAccountDiv d-flex " >                
+                    <div>
+                       <h4>NAME</h4>
+                        <h4>DOB  </h4>
+                        <h4>GMAIL</h4>
+                        <h4>PHONE</h4>
+                        <h4>ADDRESS</h4>
+                    </div>
+               <div>
+                    
+                     <h4 >:{data?.username}</h4>
+                    <h4>:{data?.dob}</h4>
+                    <h4>:{data?.email}</h4>
+                    <h4>:{data?.phone}</h4>
+                    <h4>:{data?.address}</h4>
+                    <button className="btn btn-primary m-5 " onClick={()=>{ logout() }}  >Logout  <i class="bi bi-box-arrow-right"></i></button>
+               </div>
             </div>
         </div>
     </div>

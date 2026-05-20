@@ -1,6 +1,7 @@
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { createRoot } from 'react-dom/client'
 import './index.css'
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import DoctorsPage from './components/Doctors/doctors.jsx'

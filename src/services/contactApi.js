@@ -1,7 +1,7 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 export const contactApi = createApi({
   reducerPath: 'contactApi',
-  baseQuery: fetchBaseQuery({ baseUrl: 'https://hpa-backend-8nxf.onrender.com/contact' }),
+  baseQuery: fetchBaseQuery({ baseUrl: 'https://twbackend-v5op.onrender.com/contact' }),
   endpoints: (builder) => ({
     getContactByName: builder.mutation({
       query: (contact) => ({
