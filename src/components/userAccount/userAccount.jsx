@@ -12,7 +12,7 @@ function UserAccount(){
     }
     return <div>
         <Navbar/>
-        <h1>User Account</h1>
+        <h1 className="text-center text-success " >My Account</h1>
         <div class='center' >
             <div class="displayUserAccountDiv" >
                 <h1>{data?.username}</h1>

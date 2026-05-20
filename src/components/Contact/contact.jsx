@@ -24,7 +24,7 @@ function ContactPage(){
         }
     return <div>
         <Navbar/>
-    <h1 className="text-align-center" >contact Us</h1>
+    <h1 className="text-center" >contact Us</h1>
       <form  onSubmit={contactForm.handleSubmit} >
             <div className="form-floating mb-3">
                 <textarea className="form-control" placeholder="Leave a comment here" id="floatingTextareaDisabled" {...contactForm.getFieldProps("name")} ></textarea>

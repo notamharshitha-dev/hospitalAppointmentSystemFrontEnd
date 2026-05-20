@@ -13,7 +13,7 @@ function DoctorsPage(){
     }
     return <div>
         <Navbar/>
-        <h3 className="text-center" >Select A Doctor And Book Your Appointment Now</h3>
+        <h3 className="text-center text-success " >Select A Doctor And Book Your Appointment Now</h3>
         {isLoading && <h1 className="text-center text-success " >Loading...</h1> }
         <ul class="outerDoctorDiv" >
             {
