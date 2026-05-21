@@ -54,7 +54,7 @@ function BookAppointment(){
                     <label htmlFor="floatingSelectDisabled">Select Time</label>                 
                 </div> <br />
                 <div className="d-grid gap-2 col-6 mx-auto">                         
-                <button type="submit" className="btn btn-primary  p-3 w-100 bg-success " id="liveToastBtn" onClick={()=>{ displayToastMsg() }} >book Appointment</button>
+                <button type="submit" className="btn btn-primary  p-3 w-100 bg-success " id="liveToastBtn" onClick={()=>{ displayToastMsg() }} >Book Appointment</button>
                     <div className="toast-container position-fixed top-0 end-0 p-3">
                     <div id="liveToast" className="toast" role="alert" aria-live="assertive" aria-atomic="true">
                         <button type="button" className="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>                        
