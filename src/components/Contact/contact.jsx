@@ -35,7 +35,7 @@ function ContactPage(){
                 <label htmlFor="floatingInputDisabled">Email address</label>
             </div>
             <div className="form-floating mb-3">
-                <textarea className="form-control" placeholder="Leave a comment here" id="floatingTextarea2Disabled"  {...contactForm.getFieldProps("msg")} ></textarea>
+                <textarea className="form-control" placeholder="Leave a comment here" id="floatingTextarea2Disabled"  {...contactForm.getFieldProps("message")} ></textarea>
                 <label htmlFor="floatingTextarea2Disabled">Message</label>
             </div>
             <div className="d-grid gap-2 col-6 mx-auto">                         
